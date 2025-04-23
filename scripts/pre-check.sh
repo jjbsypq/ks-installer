@@ -246,7 +246,7 @@ function ks_installer_logs_check() {
     else
       echo "    ❌ There are tasks running in ks-installer. Please use the following command to check the ks-installer command."
       echo
-      echo "            kubectl get pod -n kubesphere-system -l 'app in (ks-install, ks-installer)' -o jsonpath='{.items[0].metadata.name}')"
+      echo "            kubectl get pod -n kubesphere-system -l 'app in (ks-install, ks-installer)' -o jsonpath='{.items[0].metadata.name}'"
       echo
     fi
   fi
